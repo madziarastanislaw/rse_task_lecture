@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rse_task_lecture"
+dynamic = ["version"]
+description = "task"
+dependencies = [
+    "pint", 
+]
+license = {text = "None"}
+authors = [{name = "Stanisław", email = "madziarastanislaw@gmail.com"}]
+
+[tool.setuptools_scm]
+write_to = "src/rse_lecture/_version.py"
